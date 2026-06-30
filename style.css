@@ -149,10 +149,15 @@ header h1 {
 
 .checkbox-container input {
   position: absolute;
-  opacity: 0;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  opacity: 0.0001; /* 視覚的には透明だが、レイアウトを持ちクリック可能 */
   cursor: pointer;
-  height: 0;
-  width: 0;
+  z-index: 2;
+  margin: 0;
 }
 
 .checkmark {
